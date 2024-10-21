@@ -110,4 +110,48 @@ console.log(Number("123.456abcd1234")); // NaN
 console.log(parseInt("123.456abcd1234")); // 123
 console.log(parseFloat("123.456abcd1234")); // 123.456
 
+// NaN, Infinity
+let nan = NaN;
+let posiInfi = Number.POSITIVE_INFINITY;
+let negaInfi = Number.NEGATIVE_INFINITY;
+
+console.log(typeof nan);
+console.log(typeof posiInfi);
+console.log(typeof negaInfi);
+
+console.log(isNaN(nan));
+console.log(!!nan);
+
+console.log("====================================");
+console.log(isFinite(posiInfi));
+console.log(isFinite(negaInfi));
+
+eval("let str = 'hello'; console.log(str);")
+
+// URI, URL 통일된 자원에 대한 정보/장소
+
+// http://www.javaman.com/post/view?no=123
+// http://www.javaman.com/search?query=http://www.naver.com
+let str = 'http://www.javaman.com/search?query=http://www.네이버.com#abcd';
+console.log(encodeURI(str));
+console.log(encodeURIComponent(str));
+
+let resultStr = decodeURIComponent('http%3A%2F%2Fwww.javaman.com%2Fsearch%3Fquery%3Dhttp%3A%2F%2Fwww.%EB%84%A4%EC%9D%B4%EB%B2%84.com%23abcd');
+console.log(resultStr);
+
+// 메서드 : 객체에 종속된 함수
+let obj = {
+    x:10, 
+    y:"abcd", 
+    z:function() {}
+};
+
+class Student {
+
+}
+let student = new Student();
+
+
+
+
 
