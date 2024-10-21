@@ -62,3 +62,52 @@ function f1() {
 }
 f1();
 
+// let
+let number = 20;
+for(let s = 0; s < 10; s++) {
+    console.log(s);
+}
+// console.log(s);
+
+let fn = function(x) {
+    console.log("hello" + x);
+}
+fn("world");
+
+// final double PI = Math.PI;
+// const PI = Math.PI;
+// PI = 3.14;
+
+// closure : 지역변수가 함수 종료 후에도 남아 있는 현상
+// 클로저 동작의 최소 조건 >> 함수를 리턴
+function increaseCount() {
+    let n = 0;
+    function inner() {
+        n++;
+        return n;
+    }
+    return inner;
+}
+
+let tmp = increaseCount();
+console.log(tmp());
+console.log(tmp());
+console.log(tmp());
+
+
+// console.log(increaseCount()());
+// console.log(increaseCount()());
+// console.log(increaseCount()());
+
+// function f() {
+//     f();
+// }
+// f();
+
+console.log(this);
+
+console.log(Number("123.456abcd1234")); // NaN
+console.log(parseInt("123.456abcd1234")); // 123
+console.log(parseFloat("123.456abcd1234")); // 123.456
+
+
