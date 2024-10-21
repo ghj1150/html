@@ -33,9 +33,9 @@ let o =
         publisher: "인플루엔셜",
         sale_price: 13410,
         status: "정상판매",
-        "thumbnail": "https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1467038",
-        "title": "미움받을 용기",
-        "translators": [
+        thumbnail: "https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1467038",
+        title: "미움받을 용기",
+        translators: [
           "전경아"
         ],
         "url": "https://search.daum.net/search?w=bookpage&bookId=1467038&q=%EB%AF%B8%EC%9B%80%EB%B0%9B%EC%9D%84+%EC%9A%A9%EA%B8%B0"
@@ -46,3 +46,5 @@ let o =
   console.log(o.documents[0].status);
   console.log(o.documents[0].authors[1]);
   console.log(o.meta.is_end);
+  console.log(o.documents[0].translators[0]);
+  
