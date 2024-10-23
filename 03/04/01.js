@@ -34,7 +34,7 @@ const koday = ["일요일","월요일","화요일","수요일","목요일","금�
 console.log(koday[now.getDay()]);
 
 console.log(now.getTimezoneOffset());
-now.
+// now.
 
 
 
